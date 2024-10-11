@@ -1,4 +1,4 @@
-const API_KEY = '341f8115f4ad43b3a0ebbc318739e4ae'; // Replace with your News API key
+const API_KEY = 'your News API key'; // Replace with your News API key
 const BASE_URL = 'https://newsapi.org/v2/top-headlines';
 
 export const fetchHeadlines = async (country = 'in') => {
