@@ -35,12 +35,12 @@ Copy code
 - [git clone Click here](https://github.com/ankitthakur90/news-headlines-website.git)
 Navigate into the project directory:
 
-bash \n
+bash <br />
 Copy code 
 - cd news-headlines-website
 Install the required dependencies:
 
-bash\n
+bash<br />
 Copy code
 - npm install
 Obtain an API key from <a href="https://newsapi.org/">News API</a>:
@@ -50,16 +50,16 @@ Replace 'YOUR_API_KEY' in server.js with your actual API key.
 Running the Project
 Start the backend server:
 
-bash\n
+bash<br />
 Copy code
 - npm run server
 The backend server will be running on http://localhost:3000.
 
 Start the frontend:
 
-bash \n
-Copy code\n
-npm start\n
+bash <br />
+Copy code<br />
+npm start
 
 The website will be accessible at http://localhost:3000 in your browser.
 
@@ -90,8 +90,7 @@ Mobile View
 Future Enhancements :
 - Persistent Caching: Currently, the caching is in-memory, which clears upon server restart. A persistent caching solution using Redis or a database could be added.
 - Search Functionality: A search feature could be implemented to allow users to search for news articles on specific topics.
-- Category Filtering: Allow users to filter news by category, such as technology, sports, entertainment, etc.
-
+- Category Filtering: Allow users to filter news by category, such as technology, sports, entertainment, etc.<br />
 Conclusion:
 This project demonstrates the integration of a third-party API to fetch and display real-time news, while implementing efficient backend caching and error handling. The responsive design ensures a smooth user experience across various devices.
 
