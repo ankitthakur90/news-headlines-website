@@ -1,0 +1,97 @@
+/* General Styling */
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+/* Home Page Container */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Headings - Aligning all the headings in a row */
+.home-container h3, .home-container h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Left and Right Side (Business and TechCrunch News) */
+.left-side, .right-side {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* background-color: #f0f0f0; */
+  
+}
+
+.latest-news {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.latest-news img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  object-fit: cover; /* Prevents images from stretching */
+}
+
+.latest-news h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.latest-news p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Middle Section (Trending News with Featured Item) */
+.middle {
+  width: 54%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.middle .featured-news {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Responsive for Mobile - Show only middle section */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+  }
+
+  .left-side, .right-side {
+    width: 100%;
+  }
+
+  .middle {
+    width: 100%;
+  }
+}
+
+
+

@@ -1,0 +1,88 @@
+
+.navbar {
+  background-color: #282c34; /* Use a single color for the entire website */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space out the children */
+  padding: 10px 20px; /* Padding for the navbar */
+}
+
+.logo h1 {
+  color: white; /* Logo color */
+  margin: 0; /* Remove default margin */
+}
+
+.search-container {
+  flex-grow: 1; /* Allow search box to grow */
+  text-align: center; /* Center the search box */
+}
+
+.search-box {
+  padding: 5px; /* Padding inside the search box */
+  width: 60%; /* Width of the search box */
+  max-width: 400px; /* Max width for larger screens */
+  border: 1px solid #ccc; /* Border for the search box */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.hamburger {
+  display: none; /* Hidden by default */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  color: white; /* Hamburger color */
+  font-size: 24px; /* Size of the hamburger icon */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.nav-links {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  display: flex; /* Flex display for navigation links */
+}
+
+.nav-links li {
+  margin: 0 20px; /* Spacing between links */
+  color: white; /* Link color */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.nav-links li:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .search-container {
+    width: 100%; /* Full width for search on mobile */
+    margin: 10px 0; /* Margin for spacing */
+    text-align: center; /* Center search box */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .nav-links {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width for links */
+    text-align: center; /* Center links */
+    margin-top: 10px; /* Margin for spacing */
+  }
+
+  .nav-links.open {
+    display: flex; /* Show links when open */
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Margin for spacing */
+  }
+}
+
+
